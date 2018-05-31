@@ -2,56 +2,53 @@
 <html>
 <head>
     <title>Form Exercise</title>
+    <link rel="stylesheet" href="css/style.css"
 </head>
 <body>
 <div>
     <h1>Register With Us</h1>
     <form method="POST" action="https://webhook.site/fd043bd8-3f1b-497b-8207-269fa9c81d69">
 
-        <input type="text" name="email" placeholder="Email">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="example@mail.com">
         <br>
-
-        <input type="text" name="password" placeholder="Password">
+        <label for="pass">Password</label>
+        <input type="text" name="pass" id="pass" placeholder="8 chars long">
         <br>
-
-        <input type="submit">
-        <br>
-
         <textarea name="Bio" placeholder="Bio"></textarea>
         <br>
-        <input type="submit">
-</div>
-<div>
-    <h4>How did you hear about us?</h4>
+        <h4>How did you hear about us?</h4>
         <label for="billboard">
-            Billboard <input id="billboard" type="radio" name="quiz_question_1" value="billboard">
+            <input id="billboard" type="checkbox" name="quiz_question_1" value="billboard"> Billboard
         </label>
         <br>
         <label for="radio_advertisement">
-            Radio Advertisement <input id="radio_advertisement" type="radio" name="quiz_question_1"
-                                       value="radio_advertisement">
+            <input id="radio_advertisement" type="checkbox" name="quiz_question_1"
+                                       value="radio_advertisement"> Radio Advertisement
         </label>
         <br>
         <label for="internet_advertisement">
-            Internet Advertisement <input id="internet_advertisement" type="radio" name="quiz_question_1"
-                                          value="internet_advertisement">
+            <input id="internet_advertisement" type="checkbox" name="quiz_question_1"
+                                          value="internet_advertisement"> Internet Advertisement
         </label>
         <br>
         <label for="other">
-            Other <input id="other" type="radio" name="quiz_question_1" value="other">
+            <input id="other" type="checkbox" name="quiz_question_1" value="other"> Other
         </label>
         <br>
 </div>
 <div>
     <h4>What web browser are you using?</h4>
-        <select name="browser">
+        <select name="web-browser">
+            <option value="0">Select One</option>
             <option value="chrome">Chrome</option>
             <option value="safari">Safari</option>
             <option value="internet_explorer">Internet Explorer</option>
-            <option value="firefox">Fire Fox</option>
+            <option value="firefox">Firefox</option>
         </select>
 </div>
 <br>
+        <button>Submit</button>
 </form>
 </body>
 </html>
