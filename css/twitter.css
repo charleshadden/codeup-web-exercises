@@ -1,0 +1,144 @@
+:root {
+    --main-bg: #E6ECF0;
+    --link-color: #3B94D9;
+    --main-link-color: #848487;
+    --light-bg: #FFF;
+    --separator-color: #DDD;
+}
+* {
+    box-sizing: border-box;
+}
+body, html {
+    background-color: var(--main-bg);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+header {
+    background-image: url("https://loremflickr.com/1200/300");
+    background-size: cover;
+    min-height: 300px;
+    padding-top: 275px;
+}
+a {
+    color: var(--link-color);
+}
+nav * {
+    display: inline-block;
+}
+.top-nav {
+    width: 100%;
+    display: inline;
+}
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 1.5em; 
+}
+.nav-link {
+    color: var(--main-link-color);
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+.nav-link:hover {
+    color: var(--link-color);
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+.profile {
+    background: var(--light-bg);
+    height: 80px;
+}
+.profile-form {
+    float: right;
+    position: relative;
+    line-height: 80px;
+    top: 20px;
+}
+.profile-image {
+    position: absolute;
+    top: 307px;
+    z-index: 1000;
+    
+}
+.btn {
+    border: 1px solid var(--main-link-color);
+    color: var(--main-link-color);
+    background: var(--light-bg);
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+}
+.btn-large {
+    font-size: 1.3em;
+    padding: 10px;
+    float: right;
+}
+.img-circle {
+    border-radius: 100%;
+    border: 4px solid var(--light-bg);
+}
+.text-right {
+    text-align: right;
+}
+.text-muted {
+    color: var(--main-link-color);
+}
+.profile-details {
+    width: 25%;
+    float: left;
+    margin-left: .5em;
+    margin-right: .5em;
+    margin-top: 10px;
+    
+
+}
+.profile-items{
+    list-style-type: none;
+    padding: 0;
+
+
+}
+.profile-entry {
+    margin: 0.5em; 
+}
+.timeline{
+    width: 46%;
+    float: left;
+    /*background-color: #FFF;*/
+    margin-left: .5em;
+    margin-right: .5em;
+    margin-top: 20px;
+}
+.who-to-follow {
+    width: 25%;
+    float: right;
+    /*background-color: #FFF;*/
+    margin-left: .5em;
+    margin-right: .5em;
+    margin-top: 20px;
+}
+
+.media {
+    width: 100%;
+    background-color: var(--light-bg);
+    border-bottom: 1px solid var(--separator-color);
+    padding: .5em;
+    overflow: auto ;
+}
+
+.media-image {
+    max-width: 50px;
+    float: left;
+    margin-top: 1.33em;
+}
+
+.media-body {
+    float:left;
+    width: 75%;
+
+}
