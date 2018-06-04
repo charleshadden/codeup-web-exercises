@@ -1,9 +1,62 @@
 .fancy-header {
-    color: purple; /* single line comment */
+    color: teal;
+    text-shadow: 0 0 20px deeppink, 0 0 30px red, 0 0 55px pink;
+    text-align: center;
+}
+body {
+    background-image: url(../img5/light_toast.png);
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+h2 {
+    color: brown;
+}
+
+h4 {
     text-decoration: underline;
 }
 
-form
-    background-color: aquamarine;
+a:hover {
+    color: red;
 }
 
+a:active {
+    color: green;
+}
+
+a:visited {
+    color: hotpink;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+table, th, td {
+    background-color: papayawhip;
+    border: 1px solid black;
+    text-decoration-color: tomato;
+}
+
+td:hover {background-color: #f5f5f5;}
+
+
+header {
+    border: 1px solid black;
+    background-color: #dbd499;
+    margin: 100px;
+}
+
+.cv1 {
+    text-indent: 30px;
+    border: 1px solid sandybrown;
+
+}
+
+img {
+    border: 2px solid sandybrown;
+}
+
+.table {
+    float: center;
+}
