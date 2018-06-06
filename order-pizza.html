@@ -50,37 +50,36 @@
     <h2>Build your own pizza!</h2>
     <ul class="nav nav-tabs">
         <li class="nav-item">
-           <a class="nav-link active" href="#"><span class="badge badge-pill badge-primary">1</span> Size and Crust</a>
+           <a class="nav-link active" href="#crust"><span class="badge badge-pill badge-primary">1</span> Size and Crust</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><span class="badge badge-pill badge-primary">2</span> Cheese and Sauce</a>
+            <a class="nav-link" href="#cheese"><span class="badge badge-pill badge-primary">2</span> Cheese and Sauce</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><span class="badge badge-pill badge-primary">3</span> Toppings</a>
+            <a class="nav-link" href="#topping"><span class="badge badge-pill badge-primary">3</span> Toppings</a>
         </li>
     </ul>
     <div class="yeah">
-    <div class="card">
-        <div class="card-header main1">
-            Choose size and crust
-        </div>
-        <div class="card-body">
+    <div class="card mb-5">
+        <div class="card-header bg-primary text-light">
+            <a name="crust">Choose size and crust</a>
         </div>
         <div class="card mx-auto my-3" style="width: 99%;">
             <div class="card-header">
                 Hand Tossed
             </div>
-            <ul class="list-group list-group-flush main1">
+            <ul class="list-group list-group-flush">
                 <li class="list-group-item">Garlic seasoned with a rich, buttery taste.</li>
-                <li class="list-group-item">
-                    <div class="form-check">
+                <li class="list-group-item bg-primary">
+                    <div class="form-check text-info text-light">
                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                     <label class="form-check-label" for="exampleRadios1">
                         Small(10")
                     </label>
                 </div>
                 </li>
-                <li class="list-group-item"><div class="form-check">
+                <li class="list-group-item bg-primary">
+                    <div class="form-check text-light">
                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                     <label class="form-check-label" for="exampleRadios1">
                         Medium(12")
@@ -89,44 +88,43 @@
                 </li>
             </ul>
         </div>
-        <div class="card mx-auto mb-5" style="width: 99%;">
+        <div class="card mx-auto my-3" style="width: 99%;">
             <div class="card-header">
-                Crispy Thin
+                Crunchy thin crust
             </div>
-            <ul class="list-group list-group-flush main1">
-                <li class="list-group-item">Thin enough for optimal for crispy to crunchy ratio.</li>
-                <li class="list-group-item"><div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                        Medium(12")
-                    </label>
-                </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Thin enough for the optimum crispy to crunchy ratio.</li>
+                <li class="list-group-item bg-primary">
+                    <div class="form-check text-info text-light">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Medium(12")
+                        </label>
+                    </div>
                 </li>
-                <li class="list-group-item"><div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                        Large(14")
-                    </label>
-                </div>
+                <li class="list-group-item bg-primary">
+                    <div class="form-check text-light">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Large(14")
+                        </label>
+                    </div>
                 </li>
             </ul>
-
         </div>
         <footer class="text-right">
         <a href="#" class="btn btn-small btn-primary">Next Step  <i class="fas fa-chevron-right"></i></a>
         </footer>
     </div>
     <div class="card mb-5">
-        <div class="card-header main1">
-            Choose cheese & sauce
-        </div>
-        <div class="card-body">
+        <div class="card-header main1 text-info bg-primary text-light">
+            <a name="cheese">Choose cheese & sauce</a>
         </div>
         <div class="card mx-auto my-3" style="width: 99%;">
             <div class="card-header">
                 Cheese?
             </div>
-            <form class="form-inline main1">
+            <form class="form-inline main1 text-info bg-primary text-light">
                 <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Cheese</label>
                 <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                     <option selected>Regular</option>
@@ -140,21 +138,25 @@
             </div>
 
                  <form class="form-inline main1">
-                     <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Sauce?</label>
+                     <div class="bg-primary text-light">
+                     <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Sauce</label>
                      <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref1">
                          <option selected>Robust Inspired Tomato Sauce</option>
                          <option value="1">Alfredo</option>
                          <option value="2">Buffalo</option>
                      </select>
+                     </div>
                  </form>
 
-                <form class="form-inline main1">
+                <form class="form-inline">
+                    <div class="bg-primary text-light" style="width: 100%;">
                     <label class="my-1 mr-2" for="inlineFormCustomSelectPref">How Much?</label>
                     <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref2">
                         <option selected>Regular</option>
                         <option value="1">Heavy</option>
                         <option value="2">Light</option>
                     </select>
+                    </div>
                 </form>
 
         </div>
@@ -165,47 +167,45 @@
             </div>
         </footer>
         </div>
+
     </div>
-<div class="yeah">
     <div class="card mb-5">
-        <div class="card-header main1">
-            Choose Toppings
-        </div>
-        <div class="card-body">
+        <div class="card-header bg-primary text-light">
+            <a name="topping">Choose Toppings</a>
         </div>
         <div class="card mx-auto my-3" style="width: 99%;">
             <div class="card-header">
                 Choose Meats
             </div>
-            <ul class="list-group main1">
-                <li class="list-group-item main1">
+            <ul class="list-group">
+                <li class="list-group-item bg-primary text-light">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1b" value="option1" checked>
                         <label class="form-check-label" for="exampleRadios1">
                             Beef
                         </label>
                     </div>
                 </li>
-                <li class="list-group-item main1">
+                <li class="list-group-item bg-primary text-light">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label" for="exampleRadios2">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2b" value="option2">
+                        <label class="form-check-label" for="exampleRadios2b">
                             Ham
                         </label>
                     </div>
                 </li>
-                <li class="list-group-item main1">
+                <li class="list-group-item bg-primary text-light">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label" for="exampleRadios2">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios3b" value="option3">
+                        <label class="form-check-label" for="exampleRadios3b">
                             Philly Steak
                         </label>
                     </div>
                 </li>
-                <li class="list-group-item main1">
+                <li class="list-group-item bg-primary text-light">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label" for="exampleRadios2">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios4b" value="option4">
+                        <label class="form-check-label" for="exampleRadios4b">
                             Bacon
                         </label>
                     </div>
@@ -213,40 +213,40 @@
             </ul>
             </div>
 
-        </div>
+
         <div class="card mx-auto mb-5" style="width: 99%;">
             <div class="card-header">
                 Choose Non-Meats
             </div>
             <ul class="list-group main1">
-                <li class="list-group-item main1">
+                <li class="list-group-item bg-primary text-light">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <input class="form-check-input" type="checkbox" name="exampleRadios1" id="exampleRadios1a" value="option1">
                         <label class="form-check-label" for="exampleRadios1">
                             Green Peppers
                         </label>
                     </div>
                 </li>
-                <li class="list-group-item main1">
+                <li class="list-group-item bg-primary text-light">
                     <div class="form-check main1">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label" for="exampleRadios2">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios1" id="exampleRadios2a" value="option2">
+                        <label class="form-check-label" for="exampleRadios2a">
                             Mushrooms
                         </label>
                     </div>
                 </li>
-                <li class="list-group-item main1">
+                <li class="list-group-item bg-primary text-light">
                     <div class="form-check main1">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label" for="exampleRadios2">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios1" id="exampleRadios3a" value="option3">
+                        <label class="form-check-label" for="exampleRadios3a">
                             Onions
                         </label>
                     </div>
                 </li>
-                <li class="list-group-item main1">
+                <li class="list-group-item bg-primary text-light">
                     <div class="form-check main1">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label" for="exampleRadios2">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios1" id="exampleRadios4a" value="option4">
+                        <label class="form-check-label" for="exampleRadios4a">
                             Jalapeno Peppers
                         </label>
                     </div>
@@ -254,7 +254,7 @@
             </ul>
 
 
-
+        </div>
         </div>
 
     </div>
