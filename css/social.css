@@ -203,7 +203,7 @@ body {
     float: left;
     margin: 40px 60px 40px 60px;
 }
-.fa-user {
+#user1 {
     font-size: 10em;
     color: black;
     position: absolute;
@@ -219,7 +219,7 @@ body {
     display: inline;
 
 }
-.time {
+.time1 {
     float: right;
     top: 70px;
     position: absolute;
@@ -282,6 +282,138 @@ body {
 .fa-comment {
     margin-right: 20px;
 }
+.post2 {
+    width: 88%;
+    height: 45em;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px;
+    position: absolute;
+    top: 3750px;
+    float: left;
+    margin: 40px 60px 40px 60px;
+}
+#user2 {
+    font-size: 10em;
+    color: black;
+    position: absolute;
+    margin: .3em 0 0 .3em;
+    float: left;
+}
+.time2 {
+    float: right;
+    top: 70px;
+    position: absolute;
+    right: 50px;
+    font-size: 40px;
+}
+.p2 {
+    font-size: 50px;
+    margin: 20px;
+    position: absolute;
+    top: 300px;
+}
+.like2 {
+    border: 1px solid black;
+    height: 2em;
+    width: 20%;
+    font-size: 30px;
+    float: left;
+    bottom: 1em;
+    position: absolute;
+    background-color: #8696a2;
+    color: white;
+    margin: 0 0 0 1em;
+}
+.comment2 {
+    border: 1px solid black;
+    height: 2em;
+    width: 25%;
+    font-size: 30px;
+    float: left;
+    bottom: 1em;
+    position: absolute;
+    background-color: #8696a2;
+    color: white;
+    margin: 0 0 0 1em;
+    left: 197px;
+}
+.post3 {
+    width: 88%;
+    height: 100em;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px;
+    position: absolute;
+    top: 4528px;
+    float: left;
+    margin: 40px 60px 40px 60px;
+}
+#user3 {
+    font-size: 10em;
+    color: black;
+    position: absolute;
+    margin: .3em 0 0 .3em;
+    float: left;
+}
+.time3 {
+    float: right;
+    top: 70px;
+    position: absolute;
+    right: 50px;
+    font-size: 40px;
+}
+.p3 {
+    font-size: 50px;
+    margin: 20px;
+    position: absolute;
+    top: 300px;
+}
+.p3a {
+    position: absolute;
+    top: 200px;
+    text-align: center;
+
+}
+.like3 {
+    border: 1px solid black;
+    height: 2em;
+    width: 20%;
+    font-size: 30px;
+    float: left;
+    bottom: 1em;
+    position: absolute;
+    background-color: #8696a2;
+    color: white;
+    margin: 0 0 0 1em;
+}
+.comment3 {
+    border: 1px solid black;
+    height: 2em;
+    width: 25%;
+    font-size: 30px;
+    float: left;
+    bottom: 1em;
+    position: absolute;
+    background-color: #8696a2;
+    color: white;
+    margin: 0 0 0 1em;
+    left: 197px;
+}
+.hr3 {
+    position: absolute;
+    top: 282px;
+    right: 40px;
+}
+.sunset {
+    margin: 20px;
+    position: absolute;
+    height: 400px;
+    width: calc(100% - 40px);
+    top: 400px;
+}
+
+
+
+
 /*body border begin*/
 #top, #bottom, #left, #right {
     background: #06020a;
