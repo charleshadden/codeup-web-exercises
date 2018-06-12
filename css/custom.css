@@ -63,4 +63,13 @@ h1 {
     .nav-item {
         width: 100%;
     }
+    .hide {
+        display: none;
+        visibility: hidden;
+    }
+    footer {
+        background-color: #8696a2;
+        height: 4em;
+
+    }
 }

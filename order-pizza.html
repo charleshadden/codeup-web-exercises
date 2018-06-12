@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Order Pizza</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/custom.css">
-    <!-- Your custom styles go here -->
 </head>
 <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -39,23 +38,19 @@
                 </form>
             </ul>
         </div>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><i class="fas fa-user"></i>Sign Up</a></li>
-
-        </ul>
+            <ul class="hide nav navbar-nav navbar-right">
+                <li><a href="#"><i class="fas fa-user"></i>Sign Up</a></li>
+            </ul>
     </nav>
-
-
-
 <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div class="jumbotron jumbotron-fluid">
-                        <h1 class="display-4">Welcome to Pizza World!</h1>
-                        <p class="lead"></p>
-                </div>
-            </div>
+        <div class="jumbotron jumbotron-fluid">
+            <h1 class="display-4">Welcome to Pizza World!</h1>
+            <p class="lead"></p>
         </div>
+
+
+
+
     <h2>Build your own pizza!</h2>
     <ul class="nav nav-tabs">
         <li class="nav-item">
@@ -81,16 +76,16 @@
                 <li class="list-group-item">Garlic seasoned with a rich, buttery taste.</li>
                 <li class="list-group-item bg-primary">
                     <div class="form-check text-info text-light">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios">
                         Small(10")
                     </label>
                 </div>
                 </li>
                 <li class="list-group-item bg-primary">
                     <div class="form-check text-light">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3u" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios3u">
                         Medium(12")
                     </label>
                 </div>
@@ -105,16 +100,16 @@
                 <li class="list-group-item">Thin enough for the optimum crispy to crunchy ratio.</li>
                 <li class="list-group-item bg-primary">
                     <div class="form-check text-info text-light">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label" for="exampleRadios1">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1m" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1m">
                             Medium(12")
                         </label>
                     </div>
                 </li>
                 <li class="list-group-item bg-primary">
                     <div class="form-check text-light">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label" for="exampleRadios1">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1l" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1l">
                             Large(14")
                         </label>
                     </div>
@@ -140,15 +135,15 @@
                     <option value="1">Light</option>
                     <option value="2">Heavy</option>
                 </select>
-        </div>
-        <div class="card mx-auto mb-5" style="width: 99%;">
-            <div class="card-header">
+            </div>
+                <div class="card mx-auto mb-5" style="width: 99%;">
+            <div class="card-header text-dark">
                 Sauce?
             </div>
-
+                    <div class="card mx-auto my-3" style="width: 99%;">
                  <form class="form-inline main1">
                      <div class="bg-primary text-light">
-                     <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Sauce</label>
+                     <label class="my-1 mr-2 float-left" for="inlineFormCustomSelectPref">Sauce</label>
                      <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref1">
                          <option selected>Robust Inspired Tomato Sauce</option>
                          <option value="1">Alfredo</option>
@@ -167,10 +162,10 @@
                     </select>
                     </div>
                 </form>
-
+                    </div>
         </div>
-        <footer class="text-right">
-            <div class="btn-group" role="group" aria-label="Basic example">
+        <footer class="text-right mt-4">
+            <div class="btn-group m-4" role="group" aria-label="Basic example">
                 <a href="#crust" class="btn btn-primary text-right" style="width: 60%;"><i class="fas fa-chevron-left"></i>  Previous Step</i></a>
                 <a href="#topping" class="btn btn-primary text-right" style="width: 50%;">Next Step  <i class="fas fa-chevron-right"></i></a>
             </div>
@@ -275,7 +270,7 @@
 </div>
 
 
-    <footer class="text-right">
+    <footer class="text-right mr-4 mb-4">
         <div class="btn-group" role="group" aria-label="Basic example">
             <a href="#" class="btn btn-primary text-right" data-toggle="modal" data-target="#myModal" style="width: 100%;">Checkout  <i class="fas fa-shopping-cart"></i></a>
             <!-- Trigger the modal with a button -->
