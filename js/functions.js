@@ -1,4 +1,7 @@
 "use strict";
+(function(){
+
+
 
 /**
  * TODO:
@@ -9,12 +12,12 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 
-// function sayHello(name) {
-//     var message = "Hello, "+ name + " !";
-//     return message;
-// }
-//
-// console.log(sayHello("Charles"));
+            // function sayHello(name) {
+            //     return 'Hello, '+ name + ' !';
+            // }
+            // var name = prompt('What\'s your name?');
+            // console.log(sayHello(name));
+
 
 /**
  * TODO:
@@ -24,12 +27,8 @@
  * console.log 'helloMessage' to check your work
  */
 
-// function sayHello(charles) {
-// return charles;
-// }
-// var helloMessage = sayHello('charles');
-//
-// console.log('helloMessage');
+            // var helloMessage = sayHello('charles');
+            // console.log('helloMessage');
 
 /**
  * TODO:
@@ -37,18 +36,25 @@
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
+            //
+            // var myName = 'charles';
+            // console.log(sayHello(myName));
 
-// Don't modify the following line, it generates a random number between 1 and 3
-// and stores it in a variable named random
 
 
-// var random = Math.floor((Math.random() * 3) + 1);
-//
-// function isTwo(random) {
-//     return random === 2;
-// }
-//
-// console.log(isTwo(random));
+
+
+            // Don't modify the following line, it generates a random number between 1 and 3
+            // and stores it in a variable named random
+
+            //
+            // var random = Math.floor((Math.random() * 3) + 1);
+            //
+            // function isTwo(random) {
+            //     return random === 2;
+            // }
+            //
+            // console.log(isTwo(random));
 
 
 /**
@@ -68,13 +74,20 @@
  * different result everytime you refresh the page if you are using the random
  * number)
  */
-// var base = prompt('What is the bill total?');
-// var percentage = prompt('What percentage would you like to tip?');
-//
-// function calculateTip(base, percentage) {
-//     return base * percentage;
-// }
-// alert('You should leave ' + calculateTip(base, percentage) + '!');
+
+
+            // var base = prompt('What is the bill total?');
+            // var percentage = prompt('What percentage would you like to tip?');
+            //
+            // function calculateTip(base, percentage) {
+            //     var tipInValue = percentage / 100;
+            //
+            //     return base * tipInValue;
+            //
+            // }
+            // alert('You should leave ' + calculateTip(base, percentage) + ' dollar(s).');
+
+
 
 /**
  * TODO:
@@ -94,14 +107,16 @@
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-var priceBefore = prompt('What is the total?');
-var discountPercentage = prompt('What is the discount?');
-
-function applyDiscount(priceBefore, discountPercentage) {
-    return (priceBefore * discountPercentage) - priceBefore;
-}
-
-alert('Your new price is ' + applyDiscount(priceBefore, discountPercentage) + '.');
+            // var priceBefore = prompt('What is the total?');
+            // var discountPercentage = prompt('What is the discount?');
+            //
+            // function applyDiscount(priceBefore, discountPercentage) {
+            //     var discount = discountPercentage / 100;
+            //     var discountVal = priceBefore * discount;
+            //     return priceBefore - discountVal;
+            // }
+            //
+            // alert('Your new price is ' + applyDiscount(priceBefore, discountPercentage) + '.');
 
 /**
  * TODO:
@@ -117,3 +132,49 @@ alert('Your new price is ' + applyDiscount(priceBefore, discountPercentage) + '.
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+
+
+// 1) Make a function called returnTwo() that returns the number 2 when called
+// ---Test this function with console.log(returnTwo())
+
+            // function returnTwo() {
+            //     return 2
+            // }
+            // console.log(returnTwo());
+
+// 2) Make a function called returnName() that returns the string of your name
+// ---Test this function with console.log(returnName())
+
+            // function returnName() {
+            //     return 'Charles';
+            // }
+            // console.log(returnName());
+
+// 3) Make a function called addThree() which takes in a number input and returns the number plus 3.
+// ---Test this function with console.log(addThree(5))
+
+            // var number = prompt('Pick a number!');
+            //
+            // function addThree(number) {
+            //     return parseInt(number) + parseInt(3);
+            // }
+            //
+            // alert(addThree(number));
+
+
+// Write the function `square(a)` that takes in a number and returns the number multiplied by itself.
+
+
+            // var a = prompt('pick a number');
+            //
+            // function square(a) {
+            //     return a * a
+            // }
+            // alert(square(a));
+            //
+
+
+
+
+
+})();
