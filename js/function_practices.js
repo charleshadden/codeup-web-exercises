@@ -15,15 +15,15 @@
     var Age = prompt('How old are you?');
 
     function makeUsername(createUser, Age) {
-        return createUser.length + createUser.charAt(0) + Age;
+        return createUser.length + createUser.charAt(0).toLowerCase() + Age;
 
     }
         alert ('Your username is ' + makeUsername(createUser, Age));
 
 
-    // console.log('createUser is ' + createUser.length + ' code units long');
-    // console.log('The character at index 0   is '  + createUser.charAt(0));
-    // console.log('The users age is ' + Age);
+    console.log('createUser is ' + createUser.length + ' code units long');
+    console.log('The character at index 0   is '  + createUser.charAt(0));
+    console.log('The users age is ' + Age);
 
 
 
