@@ -15,25 +15,28 @@
  *
  * Can you refactor your code to use functions?
  */
-// var answer = confirm('Would you like to enter a number?');
+var answer = confirm('Would you like to enter a number?');
 //
 //
-//     if (answer === true) {
-//         var yourNumber = prompt('Write a number');
-//
-//         alert('Your number plus 100 is ' + yourNumber + 100);
-//         if (yourNumber % 2 == 0) {
-//             alert('Your number is even!')
-//         } else alert('Your number is odd!');
-//         if (yourNumber > 0) {
-//             alert('Your number is Positive!');
-//         } else {
-//             alert('Your number is Negative!');
-//         }
-//
-//
-//
-//     }
+    if (answer === true) {
+        var yourNumber = prompt('Write a number');
+        yourNumber = parseFloat(yourNumber);
+
+        if (!isNaN(yourNumber) && yourNumber !== true && yourNumber !== false) {
+            alert('Your number plus 100 is ' + (yourNumber + 100));
+            if (yourNumber % 2 == 0) {
+                alert('Your number is even!')
+            } else alert('Your number is odd!');
+            if (yourNumber > 0) {
+                alert('Your number is Positive!');
+            } else {
+                alert('Your number is Negative!');
+            }
+        } else {
+            alert('It is not a valid number.')
+        }
+
+        }
 
 
 
@@ -65,32 +68,39 @@
 //                  will contain a different color everytime the page loads)
 //             var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 //             var randomColor = colors[Math.floor(Math.random() * colors.length)];
-//
-//             var yourColor = prompt('Choose a color');
-//
+// //
+// //
+// //
+// //
+//          var yourColor = prompt('Choose a color');
+
 //             function analyzeColor(randomColor) {
-//                 return randomColor;
+//                 if (randomColor === 'red') {
+//                     return(randomColor + ' is the color of lava')
+//                 } else if (randomColor === 'orange') {
+//                     return(randomColor + ' is the color of an orange')
+//                 } else if (randomColor === 'yellow') {
+//                     return(randomColor + ' is the color of big bird')
+//                 } else if (randomColor === 'green') {
+//                     return(randomColor + ' is the color of grass')
+//                 } else if (randomColor === 'blue') {
+//                     return(randomColor + ' is the color of blueberries')
+//                 } else if (randomColor === 'indigo') {
+//                     return(randomColor + ' is the color of a drink')
+//                 } else if (randomColor === 'violet') {
+//                     return(randomColor + ' is the color of a flower')
+//                 } else {
+//                     return('Not a valid color')
+//                 }
 //             }
-//
+// //
+//         console.log(analyzeColor(randomColor));
+
 //             function analyzeColor(yourColor) {
 //                 return yourColor;
 //             }
-            //
-            // if (randomColor === 'red') {
-            //     console.log('red is the color of lava')
-            // } else if (randomColor === 'orange') {
-            //     console.log('orange is the color of an orange')
-            // } else if (randomColor === 'yellow') {
-            //     console.log('yellow is the color of big bird')
-            // } else if (randomColor === 'green') {
-            //     console.log('green is the color of grass')
-            // } else if (randomColor === 'blue') {
-            //     console.log('blue is the color of blueberries')
-            // } else if (randomColor === 'indigo') {
-            //     console.log('indigo is the color of a drink')
-            // } else if (randomColor === 'violet') {
-            //     console.log('violet is the color of a flower')
-            // }
+
+
 
 
 
@@ -168,29 +178,34 @@
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-var luckyNumber = Math.floor(Math.random() * 6);
-console.log(luckyNumber);
+        var luckyNumber = Math.floor(Math.random() * 6);
+        console.log(luckyNumber);
 
-if(luckyNumber === 1) {
-    var newLucky = .10
-} else if (luckyNumber === 2) {
-    var newLucky = .25
-} else if (luckyNumber === 3) {
-    var newLucky = .35
-} else if (luckyNumber === 4) {
-    var newLucky = .50
-} else if (luckyNumber === 5) {
-    var newLucky = .100
-} else alert('pick again')
-}
-console.log(newLucky);
-var totalAmount = 100;
+        if(luckyNumber === 1) {
+            var newLucky = .10
+        } else if (luckyNumber === 2) {
+            var newLucky = .25
+        } else if (luckyNumber === 3) {
+            var newLucky = .35
+        } else if (luckyNumber === 4) {
+            var newLucky = .50
+        } else if (luckyNumber === 5) {
+            var newLucky =
+        } else alert('pick again');
 
-function calculateTotal(newLucky, totalAmount) {
-        var Percent = totalAmount * newLucky;
-        return totalAmount - Percent;
-}
-console.log(calculateTotal(newLucky, totalAmount));
+        console.log(newLucky);
+        var totalAmount = 100;
+
+        function calculateTotal(newLucky, totalAmount) {
+                var Percent = totalAmount * newLucky;
+                var final = totalAmount - Percent;
+                return final
+        }
+var Percent = totalAmount * newLucky;
+var final = totalAmount - Percent;
+
+        console.log(calculateTotal(newLucky, totalAmount));
+        alert('Your lucky number is' + luckyNumber + 'Your price before was' + totalAmount + 'and your price after is' + final);
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
@@ -200,3 +215,4 @@ console.log(calculateTotal(newLucky, totalAmount));
  */
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
+
