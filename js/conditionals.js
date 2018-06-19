@@ -14,29 +14,29 @@
  * do *not* display any of the above information.
  *
  * Can you refactor your code to use functions?
- */
-var answer = confirm('Would you like to enter a number?');
+//  */
+// var answer = confirm('Would you like to enter a number?');
+// //
+// //
+//     if (answer === true) {
+//         var yourNumber = prompt('Write a number');
+//         yourNumber = parseFloat(yourNumber);
 //
+//         if (!isNaN(yourNumber) && yourNumber !== true && yourNumber !== false) {
+//             alert('Your number plus 100 is ' + (yourNumber + 100));
+//             if (yourNumber % 2 == 0) {
+//                 alert('Your number is even!')
+//             } else alert('Your number is odd!');
+//             if (yourNumber > 0) {
+//                 alert('Your number is Positive!');
+//             } else {
+//                 alert('Your number is Negative!');
+//             }
+//         } else {
+//             alert('It is not a valid number.')
+//         }
 //
-    if (answer === true) {
-        var yourNumber = prompt('Write a number');
-        yourNumber = parseFloat(yourNumber);
-
-        if (!isNaN(yourNumber) && yourNumber !== true && yourNumber !== false) {
-            alert('Your number plus 100 is ' + (yourNumber + 100));
-            if (yourNumber % 2 == 0) {
-                alert('Your number is even!')
-            } else alert('Your number is odd!');
-            if (yourNumber > 0) {
-                alert('Your number is Positive!');
-            } else {
-                alert('Your number is Negative!');
-            }
-        } else {
-            alert('It is not a valid number.')
-        }
-
-        }
+//         }
 
 
 
@@ -178,34 +178,34 @@ var answer = confirm('Would you like to enter a number?');
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-        var luckyNumber = Math.floor(Math.random() * 6);
-        console.log(luckyNumber);
-
-        if(luckyNumber === 1) {
-            var newLucky = .10
-        } else if (luckyNumber === 2) {
-            var newLucky = .25
-        } else if (luckyNumber === 3) {
-            var newLucky = .35
-        } else if (luckyNumber === 4) {
-            var newLucky = .50
-        } else if (luckyNumber === 5) {
-            var newLucky =
-        } else alert('pick again');
-
-        console.log(newLucky);
-        var totalAmount = 100;
-
-        function calculateTotal(newLucky, totalAmount) {
-                var Percent = totalAmount * newLucky;
-                var final = totalAmount - Percent;
-                return final
-        }
-var Percent = totalAmount * newLucky;
-var final = totalAmount - Percent;
-
-        console.log(calculateTotal(newLucky, totalAmount));
-        alert('Your lucky number is' + luckyNumber + 'Your price before was' + totalAmount + 'and your price after is' + final);
+//         var luckyNumber = Math.floor(Math.random() * 6);
+//         console.log(luckyNumber);
+//
+//         if(luckyNumber === 1) {
+//             var newLucky = .10
+//         } else if (luckyNumber === 2) {
+//             var newLucky = .25
+//         } else if (luckyNumber === 3) {
+//             var newLucky = .35
+//         } else if (luckyNumber === 4) {
+//             var newLucky = .50
+//         } else if (luckyNumber === 5) {
+//             var newLucky =
+//         } else alert('pick again');
+//
+//         console.log(newLucky);
+//         var totalAmount = 100;
+//
+//         function calculateTotal(newLucky, totalAmount) {
+//                 var Percent = totalAmount * newLucky;
+//                 var final = totalAmount - Percent;
+//                 return final
+//         }
+// var Percent = totalAmount * newLucky;
+// var final = totalAmount - Percent;
+//
+//         console.log(calculateTotal(newLucky, totalAmount));
+//         alert('Your lucky number is' + luckyNumber + 'Your price before was' + totalAmount + 'and your price after is' + final);
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
@@ -215,4 +215,66 @@ var final = totalAmount - Percent;
  */
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
+//
+// Bonus 1
+// Create a function that prompts a user for their favorite day of the week and alerts a unique message based on the day.
+// - Catch any invalid inputs.
+// - Write the logic using if/else ifs and then refactor using a switch case
+var day = prompt('What is your favorite day of the week?');
+
+function favoriteDay(day) {
+    if (day === 'monday' || 'tuesday' || 'wednesday' || 'thursday' || 'friday' || 'saturday' || 'sunday') {
+        if (day === 'monday') {
+            alert('Monday is black');
+        }
+        if (day === 'tuesday') {
+            alert('Tuesday is Gray');
+        }
+        if (day === 'wednesday') {
+            alert('Wednesday heart attack');
+        }
+        if (day === 'thursday') {
+            alert('Thursday I do not care about you');
+        }
+        if (day === 'friday') {
+            alert('Its Friday i am in love');
+        }
+        if (day === 'saturday') {
+            alert('Saturday wait');
+        }
+        if (day === 'sunday') {
+            alert('Sunday always comes to late');
+        }
+    } else {
+            prompt('That is not a valid output');
+        }
+}
+favoriteDay(day);
+
+
+
+
+// Bonus 2
+// Create a function that prompts the user for an input and then alerts if the input is a number or not a number.
+// - use an if/else
+//     - refactor to use a ternary operator
+// Bonus 3
+// Create a function that prompts a user for a season (Spring, Summer, Fall (or Autumn), Winter). The function then alerts the months available in that season and then asks the user to pick a given month. After selecting the month, alert a unique message for the month.
+// - account for any invalid user input
+// - case of input should not matter
+// - accept both abbreviations and full names of the months
+// GOLD STAR BONUS
+// Create a distance unit conversion application.
+//     Prompt the user for unit of measurement.
+//     Prompt the user for a value.
+//     Prompt the user for a second unit of measurement to convert to.
+//     Possibly define multiple functions to convert: inchesToFeet, feetToMiles, milesToLightYears
+// then the opposite versions: lightYearsToMiles, milesToFeet, feetToInches
+// Use these conversion functions to make the correct unit conversion
+// Potentially, you will need a large switch case to account for the possible unit conversions,
+//     i.e. what conversion functions will need to be called in and in what order.
+//     DOUBLE GOLD STAR BONUS
+//     Allow unit conversion to metric system units
+
+
 

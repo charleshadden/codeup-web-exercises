@@ -1,4 +1,4 @@
-(function()){
+(function());{
 
 
 
@@ -36,7 +36,7 @@ var googleHours = 6;
 var amazonHours = 4;
 var facebookHours = 10;
 
-var totalPay = ((googlePay * googleHours) + (amazonPay * amazonHours) + (facebookPay * facebookHours))
+var totalPay = ((googlePay * googleHours) + (amazonPay * amazonHours) + (facebookPay * facebookHours));
 
 alert('The total amount you will be paid this week is ' + totalPay + ' dollars.');
 //
