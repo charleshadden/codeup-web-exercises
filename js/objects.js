@@ -1,4 +1,4 @@
-(function() {
+
     "use strict";
 
     /**
@@ -76,40 +76,49 @@
      * > console.log(books[0].author.lastName) // "Adams"
      */
 
-    var num = prompt('How many books would you like to create?');
-
-    function createBook(num) {
-        for(var i = 0; i < num; i++) {
-            return {
-                title:  prompt('What is the title?'),
-                firstName:  prompt('What is the authors first name?'),
-                lastName:('What is the authors last name?')
-            }
-        }
-    }
 
 
-
-
-    var books = [
-        {title: 'Incognito', author: {firstName: 'David', lastName: 'Eagleman'}},
-        {title: 'Talon of the Silver Hawk', author: {firstName: 'Raymond', lastName: 'Feist'}},
-        {title: 'Homeland', author: {firstName: 'RA', lastName: 'Salvatore'}},
-        {title: 'Harry Potter', author: {firstName: 'JK', lastName: 'Rowling'}},
-        {title: 'The Jungle', author: {firstName: 'Upton', lastName: 'Sinclair'}}
-    ];
-
-
-
-    books.forEach(function(book,) {
-        console.log('Book # '+ (books.indexOf(book)+1) + '\n' + 'Title: ' + book.title + '\n' + 'Author: ' +  book.author.firstName + ' ' + book.author.lastName + '\n' + '---')
-    });
-
-    // for (var i = 0; i < books.length; i++) {
-    //     console.log("Book # " + (i+1));
-    //     console.log("Title: " + books[i].title);
-    //     console.log("Author: " + books[i].author.firstName + ' ' + books[i].author.lastName);
+    //
+    // var books = [
+    //     {title: 'Incognito', author: {firstName: 'David', lastName: 'Eagleman'}},
+    //     {title: 'Talon of the Silver Hawk', author: {firstName: 'Raymond', lastName: 'Feist'}},
+    //     {title: 'Homeland', author: {firstName: 'RA', lastName: 'Salvatore'}},
+    //     {title: 'Harry Potter', author: {firstName: 'JK', lastName: 'Rowling'}},
+    //     {title: 'The Jungle', author: {firstName: 'Upton', lastName: 'Sinclair'}}
+    // ];
+    //
+    //
+    //
+    // books.forEach(function(book) {
+    //     console.log('Book # '+ (books.indexOf(book)+1) + '\n' + 'Title: ' + book.title + '\n' + 'Author: ' +  book.author.firstName + ' ' + book.author.lastName + '\n' + '---')
+    // });
+    //
+    // var num = prompt('How many books would you like to create?');
+    //
+    // function createBook(num) {
+    //     for (var i = 0; i < num; i++) {
+    //         var newBook = {
+    //             title:prompt('Enter Book title'),
+    //             author: {
+    //                 firstName:prompt('Enter authors first name'),
+    //                 lastName:prompt('Enter authors last name')
+    //             }
+    //
+    //         };
+    //
+    //
+    //         // store the data above in an object with the same shape as our book objects
+    //
+    //         books.push(newBook);
+    //     }
     // }
+    //
+    //     console.log(createBook(num));
+    //
+    //
+    //
+
+
 
 
 
@@ -149,25 +158,50 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+var dog ={};
+dog.breed = 'German Shepherd';
+dog.weight = '102';
+dog.age = '5';
+dog.color = 'Brown/Black';
+dog.sterilized = false;
+dog.shotRecords = ['Parvo', 'Rabies', 'Bordatella'];
+dog.bark = function () {
+    alert('woof! woof!')
+};
+
+        console.log(dog);
+
+    // BONUS 1 (create a dog object):
+    // The dog object should have properties for:
+    // breed (string),
+    //     weightInPounds (number),
+    //     age (number),
+    //     color (string),
+    //     sterilized (boolean),
+    //     shotRecords (array of objects with properties for date and typeOfShot)
+    // The dog object should have methods to:
+    //     bark() - will console.log "Woof!"
+    // getOlder() - will increase age by 1
+    // fix() - will set sterile to true if dog sterilized property is false
+    // vaccinate() - takes in an argument for the name of the shot and adds a new shot with the current date to the shotRecords array
+    // BONUS 2 (expanding on the books object exercise):
+    // Add a property "keywords" that contains an array of possible genres the book may be categorized by
+    // Add a boolean property "available" and set it to true
+    // Add a dateAvailable property that has a string of the date/time when the book will be available
+    // Add a method lend() that...
+    // - changes the available property to false if it is not already false
+    // - sets the dateAvailable to a date exactly two weeks from when the lend() method is called
+    // (to do this, research the JS Date object and use methods from it in your code)
+    // Add a method receive() that...
+    // - changes the available property to true
+    // - changes the dateAvailable property to the string "now"
+    // BONUS 3 (expanding on the books object exercise):
+    // Create an application to take in user input to build the books array of objects.
+    //     Allow the user to continue adding books or to finish adding books.
+    //     Once the books have been added, output the books array in the console.
+    //     Allow a user to delete a book or a group of books by title or author last name
+    // Allow a user to edit a book by index number in the books array
+    //
+    //
 
 
-    var num = prompt('How many books would you like to create?');
-
-    function createBook(num) {
-        for(var i = 0; i < num; i++) {
-            return {
-                title:  prompt('What is the title?'),
-                firstName:  prompt('What is the authors first name?'),
-                lastName:('What is the authors last name?')
-            }
-
-
-        }
-    }
-
-    createBook(num);
-
-
-
-
-})();
