@@ -6,6 +6,9 @@
     </head>
     <body>
         <style>
+            body {
+                background-color: papayawhip;
+            }
             h1 {
                 text-align: center;
             }
@@ -25,8 +28,17 @@
                 height: 5em;
                 background-color: salmon;
             }
+            .highlighted {
+                background-color: yellow;
+            }
             .invisible {
                 display: none;
+            }
+            .bolded {
+                font-weight: bold;
+            }
+            .blued {
+                color: blue;
             }
 
         </style>
@@ -54,13 +66,80 @@
                     <dd class="invisible">There are geysers</dd>
                 </dl>
             <button class="un_hide">Show All</button>
+        <h3>Park Name</h3>
+                <ul>
+                    <li>Random Facts</li>
+                    <li>Random Facts</li>
+                    <li>Random Facts</li>
+                    <li>Random Facts</li>
+                </ul>
+        <h3>Park Name</h3>
+                <ul>
+                    <li>Random Facts</li>
+                    <li>Random Facts</li>
+                    <li>Random Facts</li>
+                    <li>Random Facts</li>
+                </ul>
+        <h3>Park Name</h3>
+                <ul>
+                    <li>Random Facts</li>
+                    <li>Random Facts</li>
+                    <li>Random Facts</li>
+                    <li>Random Facts</li>
+                </ul>
+        <h3>Park Name</h3>
+                <ul>
+                    <li>Random Facts</li>
+                    <li>Random Facts</li>
+                    <li>Random Facts</li>
+                    <li>Random Facts</li>
+                </ul>
+        <button class="clickHere">Click Here</button>
+
+
+
         <script src="js/jquery-2.2.4.js"></script>
         <script>
-            "use strict";
 
-            $(".un_hide").click(function() {
-                $('dd').toggleClass('invisible');
-            });
+            "use strict";
+            (function() {
+
+                $(".un_hide").click(function() {
+                    $('dd').toggleClass("invisible");
+                });
+
+                $("dt").click(function() {
+                    $(this).toggleClass("highlighted");
+                });
+
+
+                $("button").hover(
+                    function() {
+                        $(this).css("background-color", "red");
+                    },
+                    function() {
+                        $(this).css("background-color", "salmon");
+                    }
+                );
+                $(".clickHere").click(function() {
+                    $("ul").each(function() {
+                        $(this).children().last().toggleClass("highlighted");
+                    });
+                });
+                $("h3").click(function() {
+                   $("li").each(function() {
+                       $(this).toggleClass("bolded");
+
+                   })
+                });
+                $("li").click(function() {
+                   $(this).parent().children().first().toggleClass("blued");
+                });
+
+
+            })();
+
+
         </script>
     </body>
 </html>
