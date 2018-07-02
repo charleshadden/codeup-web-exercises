@@ -1,0 +1,55 @@
+body {
+    background-color: salmon;
+}
+.container {
+    height: 30em;
+    width: 30em;
+    background-color: lightgrey;
+    margin: auto;
+    padding: 30px;
+    border: 4px solid black;
+}
+.light {
+    margin: 20px;
+    width: 40%;
+    height: 40%;
+    border: 4px solid black;
+
+}
+.round {
+    height: 30px;
+    width: 10%;
+    border: 1px solid black;
+    background-color: #0fb784;
+    padding: 2px;
+
+}
+p {
+    line-height: 3px;
+}
+#blue-light {
+
+    float: left;
+    background-color: blue;
+    opacity: 0.5;
+
+}
+#green-light {
+    float: left;
+    background-color: green;
+    opacity: 0.5;
+}
+#yellow-light {
+    float: right;
+    background-color: lightyellow;
+    opacity: 0.5;
+}
+#red-light {
+    float: right;
+    background-color: crimson;
+    opacity: 0.5;
+}
+#start {
+    width: 100%;
+    height: 2em;
+}

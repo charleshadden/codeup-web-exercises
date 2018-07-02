@@ -2,30 +2,26 @@
 
 $(function() {
 
-    $('.important').on('dblclick', function () {
-        $(this).css("background-color", "salmon");
-})
 
-    $("h1").hover(
+    $("h1").click(
         function() {
             $(this).css('background-color', 'hotpink');
+        });
+    $("p").dblclick(
+        function() {
+            $(this).css('font-size', '72px');
+        });
+    $('li').hover(
+        function() {
+            $(this).css('color', 'red');
         },
         function() {
-            $(this).css('background-color', 'yellow');
+            $(this).css('color', 'black');
         }
     );
 
-    var keyCodes = [], konamiString = "38,38,40,40,37,39,37,39,66,65";
-    $(document).keydown(function(e) {
-        keyCodes.push( e.keyCode );
-        if (keyCodes.toString().indexOf(konamiString) >= 0){
-            $(document).unbind('keydown',arguments.length);
-
-            console.log('30 lives added');
-
-        }
-    });
-
 });
+
+
 
 

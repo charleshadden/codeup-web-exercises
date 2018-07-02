@@ -95,25 +95,25 @@
     //
     // var num = prompt('How many books would you like to create?');
     //
-    // function createBook(num) {
-    //     for (var i = 0; i < num; i++) {
-    //         var newBook = {
-    //             title:prompt('Enter Book title'),
-    //             author: {
-    //                 firstName:prompt('Enter authors first name'),
-    //                 lastName:prompt('Enter authors last name')
-    //             }
-    //
-    //         };
-    //
-    //
-    //         // store the data above in an object with the same shape as our book objects
-    //
-    //         books.push(newBook);
-    //     }
-    // }
-    //
-    //     console.log(createBook(num));
+    function createBook(num) {
+        for (var i = 0; i < num; i++) {
+            var newBook = {
+                title:prompt('Enter Book title'),
+                author: {
+                    firstName:prompt('Enter authors first name'),
+                    lastName:prompt('Enter authors last name')
+                }
+
+            };
+
+
+            // store the data above in an object with the same shape as our book objects
+
+            books.push(newBook);
+        }
+    }
+
+        console.log(createBook(num));
     //
     //
     //

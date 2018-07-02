@@ -1,0 +1,40 @@
+body{
+    background-image: url("../img5/beach10.jpg");
+}
+h1 {
+    color: salmon;
+    font-size: 72px;
+    z-index: -1000;
+    font-family: 'IM Fell English SC', serif;
+}
+p {
+    font-family: 'Shrikhand', cursive;
+    color: tomato;
+    margin-top: 8px;
+    position: absolute;
+    top: 8em;
+    left: 4em;
+}
+.banner {
+    background-color: white;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.pic {
+    height: 200em;
+    width: 500px;
+}
+.ship {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 3em;
+    right: -8em;
+}
+.dinoBird2 {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: -8em;
+    top: 10em;
+}
