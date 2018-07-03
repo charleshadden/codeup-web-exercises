@@ -3,14 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Jquery Faq</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     </head>
     <body>
         <style>
             body {
                 background-color: papayawhip;
-            }
-            h1 {
-                text-align: center;
             }
             dt {
                 font-size: 32px;
@@ -27,7 +25,17 @@
                 width: 50%;
                 height: 5em;
                 background-color: salmon;
+                border: 4px solid black;
             }
+            ul {
+                display: none;
+            }
+            h2 {
+                display: none;
+            }
+            /*.modal {*/
+                /*display: none*/
+            /*}*/
             .highlighted {
                 background-color: yellow;
             }
@@ -41,105 +49,155 @@
                 color: blue;
             }
 
+            #centered {
+                text-align: center;
+                color: tomato;
+            }
         </style>
-            <h1>National Park Facts</h1>
-                <dl>
-                    <dt>One.</dt>
-                   <dd class="invisible">National Parks are cool</dd>
-                    <dt>Two.</dt>
-                    <dd class="invisible">There are wild animals to eat you</dd>
-                    <dt>Three.</dt>
-                    <dd class="invisible">There are tall cliffs to fall off of</dd>
-                    <dt>Four.</dt>
-                    <dd class="invisible">There are bees</dd>
-                    <dt>Five.</dt>
-                    <dd class="invisible">There are weirdos</dd>
-                    <dt>Six.</dt>
-                    <dd class="invisible">No wifi</dd>
-                    <dt>Seven.</dt>
-                    <dd class="invisible">Water is sometimes scarce</dd>
-                    <dt>Eight.</dt>
-                    <dd class="invisible">There are places to get lost</dd>
-                    <dt>Nine.</dt>
-                    <dd class="invisible">People have died many times</dd>
-                    <dt>Ten.</dt>
-                    <dd class="invisible">There are geysers</dd>
-                </dl>
-            <button class="un_hide">Show All</button>
-        <h3>Park Name</h3>
-                <ul>
-                    <li>Random Facts</li>
-                    <li>Random Facts</li>
-                    <li>Random Facts</li>
-                    <li>Random Facts</li>
-                </ul>
-        <h3>Park Name</h3>
-                <ul>
-                    <li>Random Facts</li>
-                    <li>Random Facts</li>
-                    <li>Random Facts</li>
-                    <li>Random Facts</li>
-                </ul>
-        <h3>Park Name</h3>
-                <ul>
-                    <li>Random Facts</li>
-                    <li>Random Facts</li>
-                    <li>Random Facts</li>
-                    <li>Random Facts</li>
-                </ul>
-        <h3>Park Name</h3>
-                <ul>
-                    <li>Random Facts</li>
-                    <li>Random Facts</li>
-                    <li>Random Facts</li>
-                    <li>Random Facts</li>
-                </ul>
-        <button class="clickHere">Click Here</button>
+        <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">-->
+            <!--Launch demo modal-->
+        <!--</button>-->
+
+        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Please Register</h5>
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Register for our website today!!
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                <h1 id="centered">National Park Facts</h1>
+                    <div class="newsLetter">
+                        <h1>Would you like to sign up for the Newsletter?</h1>
+                        <span id="clicked">X</span>
+                    </div>
+                    <div class="register">
+                        <h2>Register for site</h2>
+                    </div>
+                    <dl>
+                        <dt>One.</dt>
+                       <dd class="invisible">National Parks are cool</dd>
+                        <dt>Two.</dt>
+                        <dd class="invisible">There are wild animals to eat you</dd>
+                        <dt>Three.</dt>
+                        <dd class="invisible">There are tall cliffs to fall off of</dd>
+                        <dt>Four.</dt>
+                        <dd class="invisible">There are bees</dd>
+                        <dt>Five.</dt>
+                        <dd class="invisible">There are weirdos</dd>
+                        <dt>Six.</dt>
+                        <dd class="invisible">No wifi</dd>
+                        <dt>Seven.</dt>
+                        <dd class="invisible">Water is sometimes scarce</dd>
+                        <dt>Eight.</dt>
+                        <dd class="invisible">There are places to get lost</dd>
+                        <dt>Nine.</dt>
+                        <dd class="invisible">People have died many times</dd>
+                        <dt>Ten.</dt>
+                        <dd class="invisible">There are geysers</dd>
+                    </dl>
+                <button class="un_hide">Show All</button>
+            <h3>Park Name</h3>
+                    <ul>
+                        <li>Random Facts</li>
+                        <li>Random Facts</li>
+                        <li>Random Facts</li>
+                        <li>Random Facts</li>
+                    </ul>
+            <h3>Park Name</h3>
+                    <ul>
+                        <li>Random Facts</li>
+                        <li>Random Facts</li>
+                        <li>Random Facts</li>
+                        <li>Random Facts</li>
+                    </ul>
+            <h3>Park Name</h3>
+                    <ul>
+                        <li>Random Facts</li>
+                        <li>Random Facts</li>
+                        <li>Random Facts</li>
+                        <li>Random Facts</li>
+                    </ul>
+            <h3>Park Name</h3>
+                    <ul>
+                        <li>Random Facts</li>
+                        <li>Random Facts</li>
+                        <li>Random Facts</li>
+                        <li>Random Facts</li>
+                    </ul>
+            <button class="clickHere">Click Here</button>
 
 
 
-        <script src="js/jquery-2.2.4.js"></script>
-        <script>
+            <script src="js/jquery-2.2.4.js"></script>
+            <script>
 
-            "use strict";
-            (function() {
+                "use strict";
+                (function() {
 
-                $(".un_hide").click(function() {
-                    $('dd').toggleClass("invisible");
-                });
-
-                $("dt").click(function() {
-                    $(this).toggleClass("highlighted");
-                });
-
-
-                $("button").hover(
-                    function() {
-                        $(this).css("background-color", "red");
-                    },
-                    function() {
-                        $(this).css("background-color", "salmon");
-                    }
-                );
-                $(".clickHere").click(function() {
-                    $("ul").each(function() {
-                        $(this).children().last().toggleClass("highlighted");
+                    $(".un_hide").click(function() {
+                        $('dd').toggleClass("invisible");
                     });
-                });
-                $("h3").click(function() {
-                   $("li").each(function() {
-                       $(this).toggleClass("bolded");
 
-                   })
-                });
-                $("li").click(function() {
-                   $(this).parent().children().first().toggleClass("blued");
-                });
+                    $("dt").click(function() {
+                        $(this).toggleClass("highlighted");
+                    });
 
 
-            })();
+                    $("button").hover(
+                        function() {
+                            $(this).css("background-color", "red");
+                        },
+                        function() {
+                            $(this).css("background-color", "salmon");
+                        }
+                    );
+
+                    $(".clickHere").click(function() {
+                        $("ul").each(function() {
+                            $(this).children().last().toggleClass("highlighted");
+                        });
+                    });
+
+                    $("h3").dblclick(function() {
+                       $(this).next().toggleClass('bolded');
+                    });
+
+                    $("li").click(function() {
+                       $(this).parent().children().first().toggleClass("blued");
+                    });
+
+                    $('#clicked').click(function() {
+                      $('.newsLetter').hide()
+                    });
+
+                    $('h3').click(function() {
+                        $(this).next().show();
+                    });
+
+                    setTimeout(function() {
+                        $('#exampleModalLong').modal('show');
+                        console.log('hello');
+                    }, 8000);
+
+
+                })();
 
 
         </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
     </body>
 </html>
