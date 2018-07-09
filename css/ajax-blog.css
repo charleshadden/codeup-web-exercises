@@ -1,0 +1,31 @@
+body {
+    background-color:black;
+}
+
+#posts {
+    background-color: antiquewhite;
+}
+
+h1 {
+    color: lightcyan;
+    text-align: center;
+}
+
+dl {
+    border: 4px solid lightcyan;
+    padding: 1em;
+}
+
+dd {
+    background-color: whitesmoke;
+}
+dt {
+    color: blue;
+    font-size: 20px;
+}
+
+button {
+    width: 20%;
+    height: 4em;
+    margin-right: 100em;
+}

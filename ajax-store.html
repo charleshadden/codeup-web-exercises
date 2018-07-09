@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Store</title>
+    <script src="js/jquery-2.2.4.js"></script>
+</head>
+<body>
+
+<h1>My Tool Store</h1>
+
+<table id="products">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Categories</th>
+    </tr>
+    </thead>
+    <tbody id="insertProducts"></tbody>
+</table>
+    <button id="refresh">Refresh</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+    (function() {
+        "use strict";
+
+        function getData() {
+
+        $.ajax('data/inventory.json').done(function(data){
+
+            console.log(data);
+
+           var output = [];
+           data.forEach(function(result) {
+           output += "<tr>";
+              output += "<td>" + result.title + "</td>";
+               output += "<td>" + result.quantity + "</td>";
+               output += "<td>" + result.price + "</td>";
+               output += "<td>" + result.categories + "</td>"
+           output += "</tr>";
+           });
+
+            $('#insertProducts').html(output);
+            return output;
+
+        });
+        }
+
+            $("#refresh").click(function() {
+                   $('#insertProducts').html(getData());
+                   console.log('Reloaded');
+            });
+
+              getData();
+
+    })();
+
+</script>
+<script type="application/javascript" src="js/jquery-2.2.4.js"></script>
+</body>
+</html>
