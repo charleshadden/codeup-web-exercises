@@ -10,6 +10,10 @@ h1 {
     color: lightcyan;
     text-align: center;
 }
+h2 {
+    color: salmon;
+    text-align: center;
+}
 
 dl {
     border: 4px solid lightcyan;
