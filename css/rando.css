@@ -1,0 +1,28 @@
+body {
+    background-color: papayawhip;
+    font-family: 'Gaegu', cursive;
+    font-size: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: tomato;
+    border: 8px solid black;
+    font-family: 'Coda Caption', sans-serif;
+    background-color: #cbffcd;
+}
+
+
+button {
+    width: 100%;
+    height: 8em;
+    background-color: whitesmoke;
+    font-family: 'Coda Caption', sans-serif;
+    border: 4px solid black;
+    color: tomato;
+    margin: 4px;
+    font-size: 12px;
+}
+#message {
+    text-align: center;
+}

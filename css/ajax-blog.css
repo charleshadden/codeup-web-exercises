@@ -1,13 +1,10 @@
 body {
-    background-color:black;
+    background-color:antiquewhite;
 }
 
-#posts {
-    background-color: antiquewhite;
-}
 
 h1 {
-    color: lightcyan;
+    color: goldenrod;
     text-align: center;
 }
 h2 {
@@ -16,12 +13,12 @@ h2 {
 }
 
 dl {
-    border: 4px solid lightcyan;
+    border: 4px solid gold;
     padding: 1em;
 }
 
 dd {
-    background-color: whitesmoke;
+    background-color: cyan;
 }
 dt {
     color: blue;
@@ -32,4 +29,7 @@ button {
     width: 20%;
     height: 4em;
     margin-right: 100em;
+}
+#posts {
+    background-color: antiquewhite;
 }

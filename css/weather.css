@@ -1,0 +1,36 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    background-color: cyan;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+.box {
+    height:15em;
+    width:25%;
+    border:2px solid black;
+    background-color: #cbffcd;
+    text-align: center;
+    margin: auto;
+}
+.user {
+    margin: auto;
+    text-align: center;
+}
+#map {
+    height: 50%;
+    width: 75%;
+    margin: auto;
+    border: 2px solid papayawhip;
+}
+#city {
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+}
