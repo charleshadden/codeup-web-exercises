@@ -9,45 +9,18 @@
 </head>
 <body>
     <h1>Weather Map</h1>
-    <div id="city">
-        hello
-    </div>
-    <div class="container mb-4">
+    <div id="city"></div>
+    <div class="container">
         <div class="row">
-            <div id="day1"class="col-sm box">
-                Today
-                <div id="temp"></div>
-                <div id="icon"><img id="wicon" src="" alt="Weather icon"></div>
-                <div id="cloud"></div>
-                <div id="humidity"></div>
-                <div id="wind"></div>
-                <div id="pressure"></div>
-
-            </div>
-            <div id="day2"class="col-sm box">
-                Tomorrow
-                <div id="temp2"></div>
-                <div id="icon2"><img id="wicon2" src="" alt="Weather icon"></div>
-                <div id="cloud2"></div>
-                <div id="humidity2"></div>
-                <div id="wind2"></div>
-                <div id="pressure2"></div>
-
-            </div>
-            <div id="day3"class="col-sm box">
-                Day after Tomorrow
-                <div id="temp3"></div>
-                <div id="icon3"><img id="wicon3" src="" alt="Weather icon"></div>
-                <div id="cloud3"></div>
-                <div id="humidity3"></div>
-                <div id="wind3"></div>
-                <div id="pressure3"></div>
-            </div>
+            <div id="day1"class="col-12 col-md-4 box"></div>
+            <div id="day2"class="col-12 col-md-4 box"></div>
+            <div id="day3"class="col-12 col-md-4 box"></div>
         </div>
+        <button id="nightmode">Night Mode</button>
+        <button id="daymode">Normal View</button>
     </div>
-    <div id="map">
-
-    </div>
+    <div id="map"></div>
+    <div id="map2"></div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script type="application/javascript" src="js/jquery-2.2.4.js"></script>
