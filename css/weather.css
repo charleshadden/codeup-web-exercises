@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-    background-image: url("../weather-img/weather.jpeg");
+    background-color: antiquewhite;
     font-size: 20px;
 }
 
@@ -18,6 +18,7 @@ h4 {
     font-family: 'Bree Serif', serif;
     text-decoration: underline;
 }
+
 ul {
     list-style-type: none;
     text-align: center;
@@ -26,10 +27,10 @@ ul {
 P {
     margin: 0;
 }
-.wi {
-    font-size: 2em;
-}
 
+i {
+    float: left;
+}
 
 .container {
     margin: 0 auto 0 auto;
@@ -46,20 +47,7 @@ P {
 }
 
 #daymode {
-    margin: 0 auto 0 auto;
-    width: 100%;
-    height: 3em;
-    display: none;
-    background-color: black;
-    color: white;
-    border: 2px solid white;
-}
-
-#nightmode {
-    margin: 0 auto 0 auto;
-    width: 100%;
-    height: 3em;
-    border: 2px solid black;
+ display: none;
 }
 
 #map {
@@ -67,10 +55,18 @@ P {
     width: 90%;
     margin: 0 auto 1em auto;
     border: 2px solid cyan;
-
 }
 
 #map2 {
+    height: 50%;
+    width: 90%;
+    margin: 0 auto 0 auto;
+    border: 2px solid papayawhip;
+    display: none;
+
+}
+
+#map3 {
     height: 50%;
     width: 90%;
     margin: 0 auto 0 auto;
@@ -84,4 +80,19 @@ P {
     margin: auto;
     font-size: 30px;
     font-weight: bold;
+}
+
+#night {
+    display: none;
+    float: left;
+    margin-left: 1em;
+    font-size: 12px;
+}
+
+#day {
+    display: none;
+    float: left;
+    margin-left: 1em;
+    font-size: 12px;
+    color: white;
 }

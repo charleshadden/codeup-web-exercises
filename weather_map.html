@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Weather Map</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/weather.css">
@@ -16,8 +17,13 @@
             <div id="day2"class="col-12 col-md-4 box"></div>
             <div id="day3"class="col-12 col-md-4 box"></div>
         </div>
-        <button id="nightmode">Night Mode</button>
-        <button id="daymode">Normal View</button>
+        <i class="fas fa-eye" id="nightmode"></i>
+        <p id="night">Nightmode</p>
+
+        <i class="far fa-eye-slash" id="daymode"></i>
+        <p id="day">Day Mode</p>
+        <!--<button id="nightmode">Night Mode</button>-->
+        <!--<button id="daymode">Normal View</button>-->
     </div>
     <div id="map"></div>
     <div id="map2"></div>

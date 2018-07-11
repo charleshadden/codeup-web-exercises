@@ -10,19 +10,23 @@
     }));
 
     $('#nightmode').hover(function() {
-        $(this).css('background-color','black');
-        $(this).css('color','white')
+        $("#nightmode").css('color','white');
+        $("#night").show()
+        // $(this).css('background-color','white')
     }, (function() {
-        $(this).css('background-color','white');
+        // $(this).css('background-color','black');
         $(this).css('color','black')
+        $("#night").hide()
     }));
 
     $('#daymode').hover(function() {
         $(this).css('background-color','white');
         $(this).css('color','black')
+        $("#day").show()
     }, (function() {
         $(this).css('background-color','black');
         $(this).css('color','white')
+        $("#day").hide()
     }));
 
 //==========daymode map=========\\
@@ -77,6 +81,7 @@
 //=========daymode=========\\
 
     $('#daymode').click(function(){
+        $('')
         $('#nightmode').show();
         $('#daymode').hide();
         $('#map').toggle().show();
@@ -201,6 +206,8 @@
         });
     }
 
+
+
 //===============updates weather based on movement of marker=======\\
 
     function weatherUpdate(lat, lng) {
@@ -215,17 +222,32 @@
             console.log(data);
 
 //================generates data==============\\
+                function  toTextualDescription(degree){
+                    if (degree>337.5) return 'Northerly';
+                    if (degree>292.5) return 'North Westerly';
+                    if(degree>247.5) return 'Westerly';
+                    if(degree>202.5) return 'South Westerly';
+                    if(degree>157.5) return 'Southerly';
+                    if(degree>122.5) return 'South Easterly';
+                    if(degree>67.5) return 'Easterly';
+                    if(degree>22.5){return 'North Easterly';}
+                    return 'Northerly';
+                }
 
             function buildList1(data) {
+
+
                 var output = "";
 
                 output += "<h4>" + 'Today'  +"</h4>";
                 output += "<p>" + "<strong> Temp: </strong>" +  Math.round(data.list[0].main.temp_max) + "\xB0" + " / " + Math.round(data.list[0].main.temp_min) +"\xB0"+ "</p>";
                 output += "<p>" + "<img src='http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png'>" + "</p>";
                 output += "<p>" + "<strong> Weather: </strong>" + data.list[0].weather[0].description + "</p>";
-                output += "<p>" + "<strong> Humidity: </strong>" + data.list[0].main.humidity + "</p>";
+                output += "<p>" + "<strong> Humidity: </strong>" + data.list[0].main.humidity + "%" + "</p>";
                 output += "<p>" + "<strong> Wind: </strong>" + data.list[0].wind.speed + "</p>";
                 output += "<p>" + "<strong> Pressure: </strong>" + data.list[0].main.pressure; + "</p>";
+                output += "<p>" + "<strong> Wind Direction: </strong>" + toTextualDescription(data.list[0].wind.deg) + "</p>";
+
 
                 return output;
             }
@@ -238,9 +260,12 @@
                 output += "<p>" + "<strong> Temp: </strong>" +  Math.round(data.list[8].main.temp_max) + "\xB0" + " / " + Math.round(data.list[8].main.temp_min) +"\xB0"+ "</p>";
                 output += "<p>" + "<img class ='bounce' src='http://openweathermap.org/img/w/" + data.list[8].weather[0].icon + ".png'>" + "</p>";
                 output += "<p>" + "<strong> Weather: </strong>" + data.list[8].weather[0].description + "</p>";
-                output += "<p>" + "<strong> Humidity: </strong>" + data.list[8].main.humidity + "</p>";
+                output += "<p>" + "<strong> Humidity: </strong>" + data.list[8].main.humidity + "%" + "</p>";
                 output += "<p>" + "<strong> Wind: </strong>" + data.list[8].wind.speed + "</p>";
                 output += "<p>" + "<strong> Pressure: </strong>" + data.list[8].main.pressure + "</p>";
+                output += "<p>" + "<strong> Wind Direction: </strong>" + toTextualDescription(data.list[8].wind.deg) + "</p>";
+
+
 
                 return output;
             }
@@ -253,9 +278,10 @@
                 output += "<p>" + "<strong> Temp: </strong>" +  Math.round(data.list[16].main.temp_max) + "\xB0" + " / " + Math.round(data.list[16].main.temp_min) +"\xB0"+ "</p>";
                 output += "<p>" + "<img src='http://openweathermap.org/img/w/" + data.list[16].weather[0].icon + ".png'>"+ "</p>";
                 output += "<p>" + "<strong> Weather: </strong>" + data.list[16].weather[0].description + "</p>";
-                output += "<p>" + "<strong> Humidity: </strong>" + data.list[16].main.humidity + "</p>";
+                output += "<p>" + "<strong> Humidity: </strong>" + data.list[16].main.humidity + "%" + "</p>";
                 output += "<p>" + "<strong> Wind: </strong>" + data.list[16].wind.speed + "</p>";
                 output += "<p>" + "<strong> Pressure: </strong>" + data.list[16].main.pressure + "</p>";
+                output += "<p>" + "<strong> Wind Direction: </strong>" + toTextualDescription(data.list[16].wind.deg) + "</p>";
 
                 return output;
             }
