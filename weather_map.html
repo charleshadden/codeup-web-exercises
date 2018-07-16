@@ -9,28 +9,47 @@
     <link rel="stylesheet" href="css/weather.css">
 </head>
 <body>
-    <h1>Weather Map</h1>
-    <div id="city"></div>
-    <div class="container">
-        <div class="row">
-            <div id="day1"class="col-12 col-md-4 box"></div>
-            <div id="day2"class="col-12 col-md-4 box"></div>
-            <div id="day3"class="col-12 col-md-4 box"></div>
-        </div>
-        <i class="fas fa-eye" id="nightmode"></i>
-        <p id="night">Nightmode</p>
 
-        <i class="far fa-eye-slash" id="daymode"></i>
-        <p id="day">Day Mode</p>
-        <!--<button id="nightmode">Night Mode</button>-->
-        <!--<button id="daymode">Normal View</button>-->
+    <div class="main">
+        <div class="header">
+            <h1><img class="deer" src="weather-img/deer.png">Weather Map<img class="deer" src="weather-img/deer.png"></h1>
+            <div id="city"></div>
+        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="card col-sm-12 col-md-4">
+                        <h4 class="card-title text-center">Today</h4>
+                            <div id="day1" class="card-body text-center">
+                            </div>
+                    </div>
+                    <div class="card card col-sm-12 col-md-4">
+                        <h4 class="card-title text-center">Tomorrow</h4>
+                        <div id="day2" class="card-body text-center">
+                        </div>
+                    </div>
+                    <div class="card card col-sm-12 col-md-4">
+                        <h4 class="card-title text-center">Day after Tomorrow</h4>
+                        <div id="day3" class="card-body text-center">
+                        </div>
+                    </div>
+                </div>
+                <i class="fas fa-eye" id="nightmode"></i>
+                <p id="night">Nightmode</p>
+                <i class="far fa-eye-slash" id="daymode"></i>
+                <p id="day">Day Mode</p>
+            </div>
+        <!--<input id="pac-input" class="controls" type="text" placeholder="Search Box">-->
     </div>
-    <div id="map"></div>
-    <div id="map2"></div>
+
+        <div id="map"></div>
+        <div id="map2"></div>
+    <footer>
+        <!--<p>Charles Hadden</p>-->
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script type="application/javascript" src="js/jquery-2.2.4.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxIPbNd4ljI6NdSyP5ugk4XoKDzw2VEZM" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxIPbNd4ljI6NdSyP5ugk4XoKDzw2VEZM&libraries=places" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="application/javascript" src="js/weather.js"></script>

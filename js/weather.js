@@ -31,9 +31,9 @@
 
 //==========daymode map=========\\
 
-    var map;
-    var lat = 29.4241;
-    var lng = -98.4936;
+    let map;
+    let lat = 29.4241;
+    let lng = -98.4936;
 
     function initMap() {
 
@@ -41,14 +41,14 @@
 
         map = new google.maps.Map(document.getElementById('map'), {
             zoom: 3,
-            center: myLatLng
-
+            center: myLatLng,
+            mapTypeId: 'roadmap'
         });
 
         var marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
-            label: 'Drag',
+            label: 'drag',
             draggable: true
         });
 
@@ -71,9 +71,11 @@
         $('body').css('background-color','black', 'color','white');
         $('h1').css('color','white');
         $('#city').css('color','white');
-        $('.box').css('background-color','black');
-        $('.box').css('color','white');
-        $('.box').css('border','2px solid white');
+        $('.header').css('background-color','black');
+        $('.card').css('background-color','black');
+        $('.card').css('color','white');
+        $('.card').css('border', '1px solid white');
+        $('.row').css('border', '8px solid white');
 
         initMap2()
     });
@@ -87,12 +89,13 @@
         $('#map').toggle().show();
         $('#map2').toggle().hide();
         $('body').css('background-color','antiquewhite', 'color','black');
+        $('.header').css('background-color','antiquewhite');
         $('h1').css('color','black');
         $('#city').css('color','black');
-        $('.box').css('background-color','#cbffcd');
-        $('.box').css('color','black');
-        $('.box').css('border','2px solid black');
-        $('#map').css('border', '2px solid black');
+        $('.card').css('background-color','white');
+        $('.card').css('color','black');
+        $('.card').css('border', '1px solid black');
+        $('.row').css('border', '8px solid black');
 
         initMap()
     });
@@ -222,7 +225,7 @@
             console.log(data);
 
 //================generates data==============\\
-                function  toTextualDescription(degree){
+                function  windType(degree){
                     if (degree>337.5) return 'Northerly';
                     if (degree>292.5) return 'North Westerly';
                     if(degree>247.5) return 'Westerly';
@@ -236,55 +239,49 @@
 
             function buildList1(data) {
 
-
                 var output = "";
 
-                output += "<h4>" + 'Today'  +"</h4>";
                 output += "<p>" + "<strong> Temp: </strong>" +  Math.round(data.list[0].main.temp_max) + "\xB0" + " / " + Math.round(data.list[0].main.temp_min) +"\xB0"+ "</p>";
                 output += "<p>" + "<img src='http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png'>" + "</p>";
                 output += "<p>" + "<strong> Weather: </strong>" + data.list[0].weather[0].description + "</p>";
                 output += "<p>" + "<strong> Humidity: </strong>" + data.list[0].main.humidity + "%" + "</p>";
-                output += "<p>" + "<strong> Wind: </strong>" + data.list[0].wind.speed + "</p>";
+                output += "<p>" + "<strong> Wind: </strong>" + data.list[0].wind.speed +" " + windType(data.list[0].wind.deg) + "</p>";
                 output += "<p>" + "<strong> Pressure: </strong>" + data.list[0].main.pressure; + "</p>";
-                output += "<p>" + "<strong> Wind Direction: </strong>" + toTextualDescription(data.list[0].wind.deg) + "</p>";
-
 
                 return output;
             }
+
             $('#day1').html(buildList1(data));
 
             function buildList2(data) {
+
                 var output = "";
 
-                output += "<h4>" + 'Tomorrow'  +"</h4>";
                 output += "<p>" + "<strong> Temp: </strong>" +  Math.round(data.list[8].main.temp_max) + "\xB0" + " / " + Math.round(data.list[8].main.temp_min) +"\xB0"+ "</p>";
                 output += "<p>" + "<img class ='bounce' src='http://openweathermap.org/img/w/" + data.list[8].weather[0].icon + ".png'>" + "</p>";
                 output += "<p>" + "<strong> Weather: </strong>" + data.list[8].weather[0].description + "</p>";
                 output += "<p>" + "<strong> Humidity: </strong>" + data.list[8].main.humidity + "%" + "</p>";
-                output += "<p>" + "<strong> Wind: </strong>" + data.list[8].wind.speed + "</p>";
+                output += "<p>" + "<strong> Wind: </strong>" + data.list[8].wind.speed +" " + windType(data.list[8].wind.deg) + "</p>";
                 output += "<p>" + "<strong> Pressure: </strong>" + data.list[8].main.pressure + "</p>";
-                output += "<p>" + "<strong> Wind Direction: </strong>" + toTextualDescription(data.list[8].wind.deg) + "</p>";
-
-
 
                 return output;
             }
+
             $('#day2').html(buildList2(data));
 
             function buildList3(data) {
                 var output = "";
 
-                output += "<h4>" + 'Tomorrow'  +"</h4>";
                 output += "<p>" + "<strong> Temp: </strong>" +  Math.round(data.list[16].main.temp_max) + "\xB0" + " / " + Math.round(data.list[16].main.temp_min) +"\xB0"+ "</p>";
                 output += "<p>" + "<img src='http://openweathermap.org/img/w/" + data.list[16].weather[0].icon + ".png'>"+ "</p>";
                 output += "<p>" + "<strong> Weather: </strong>" + data.list[16].weather[0].description + "</p>";
                 output += "<p>" + "<strong> Humidity: </strong>" + data.list[16].main.humidity + "%" + "</p>";
-                output += "<p>" + "<strong> Wind: </strong>" + data.list[16].wind.speed + "</p>";
+                output += "<p>" + "<strong> Wind: </strong>" + data.list[16].wind.speed +" " + windType(data.list[16].wind.deg) + "</p>";
                 output += "<p>" + "<strong> Pressure: </strong>" + data.list[16].main.pressure + "</p>";
-                output += "<p>" + "<strong> Wind Direction: </strong>" + toTextualDescription(data.list[16].wind.deg) + "</p>";
 
                 return output;
             }
+
             $('#day3').html(buildList3(data));
 
             $('#city').html(data.city.name + ", " + data.city.country);
